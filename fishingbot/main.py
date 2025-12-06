@@ -8,7 +8,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 import json
 import os
 
-TOKEN = "8490395115:AAH5l8WTxp6hIKRArq-o_32VRYZbGMstcw8"
+TOKEN = ""
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 
@@ -583,3 +583,4 @@ async def cb_handler(callback: types.CallbackQuery):
 if __name__ == "__main__":
     load_data()
     asyncio.run(dp.start_polling(bot))
+
